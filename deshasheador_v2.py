@@ -6,7 +6,7 @@ from termcolor import colored
 
 parser = argparse.ArgumentParser(description= 'Convertidor de hash en texto plano')
 parser.add_argument( '--hash', type= str, required = True, help='Debes introducir un hash y un diccionario¡¡')
-parser.add_argument( '--diccionario',type =str)
+parser.add_argument( '--diccionario',type =str, required=True)
 parser = parser.parse_args()
  
 def main ():
